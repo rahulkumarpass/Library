@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCA Library</title>
+    <link rel="icon" href="Image/download (1)library.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PJY5RZ42Q6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PJY5RZ42Q6");
+    </script>
+  </head>
+
+  <body class="bg-image home-page">
+    <main>
+      <div class="welcome-banner fade-in">
+        <h2>Welcome To The Online Library</h2>
+      </div>
+
+      <div class="container fade-in-delay">
+        <div class="card">
+          <a
+            href="Student.html"
+            style="background: transparent; padding: 0; display: block"
+          >
+            <img class="card-img" src="Image/student.jpeg" alt="Student" />
+            <div>
+              <button id="studentLogin" class="btn">Student Login</button>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a
+            href="Employee.html"
+            style="background: transparent; padding: 0; display: block"
+          >
+            <img class="card-img" src="Image/Employee.jpeg" alt="Employee" />
+            <div>
+              <button id="employeeLogin" class="btn">Employee Login</button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p id="text">
+          Explore a vast collection of books, journals, and educational
+          resources from the comfort of your home.<br />
+          Our digital library offers instant access to thousands of titles
+          across various genres and subjects.<br />
+          Whether you're a student, researcher, or book lover, discover and
+          enjoy reading anytime, anywhere.
+        </p>
+        <p id="date"></p>
+      </div>
+    </main>
+
+    <!-- Link to external script -->
+    <script src="script.js"></script>
+  </body>
+</html>

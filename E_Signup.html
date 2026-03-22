@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Employee Signup Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-image e-signup-page">
+    <main style="display: flex; justify-content: center; width: 100%;">
+        <div class="form-container">
+            <h3><u>Enter Details</u></h3>
+            <form>
+                <input type="text" name="name" placeholder="Enter First name" />
+                <input type="text" name="Last_name" placeholder="Enter Last name" />
+                <label>Select Date of Birth :</label> <input type="date" name="date_of_birth" />
+                <label>Upload Image :</label>  <input type="file" name="image" />
+                
+                <label>Select Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" name="Gender" value="Male" id="E_male" /><label for="E_male">Male</label>
+                    <input type="radio" name="Gender" value="Female" id="E_female" /><label for="E_female">Female</label>
+                </div>
+                
+                <input type="email" name="email" placeholder="Enter your email i'd" />
+                <input type="password" name="password" minlength="8" placeholder="Enter password" required />
+                
+                <div class="form-actions">
+                    <button class="btn">Submit</button>
+                    <button class="btn">Reset</button>
+                    <button class="btn" type="button" onclick="window.history.back()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

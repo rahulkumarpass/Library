@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signup Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-image signup-page">
+    <main style="display: flex; justify-content: center; width: 100%;">
+        <div class="form-container">
+            <h3><u>Enter Details</u></h3>
+            <form>
+                <input type="text" name="name" placeholder="Enter First name" />
+                <input type="text" name="Last_name" placeholder="Enter Last name" />
+                <input type="text" name="Uid" placeholder="Enter your Uid" />
+                <label>Select Date of Birth :</label> <input type="date" name="date_of_birth" />
+                <label>Upload Image :</label>  <input type="file" name="image" />
+                
+                <label>Select Session:</label>
+                <div style="display: flex; gap: 10px;">
+                    <label>Start: <input type="month" name="Session" min="2009-06"  max="2026-07" /></label>
+                    <label>End:   <input type="month" name="Session" min="2009-06"  max="2026-07" /></label>
+                </div>
+                
+                <label>Select Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" name="Gender" value="Male" id="male" /><label for="male">Male</label>
+                    <input type="radio" name="Gender" value="Female" id="female" /><label for="female">Female</label>
+                </div>
+                
+                <input type="email" name="email" placeholder="Enter your email i'd" />
+                <input type="password" name="password" minlength="8" placeholder="Enter password" />
+                
+                <div class="form-actions">
+                    <button class="btn">Submit</button>
+                    <button class="btn">Reset</button>
+                    <button class="btn" type="button" onclick="window.history.back()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
